@@ -14,10 +14,16 @@ function printAlphabetWithArg(arg){
             indice = i;
             break;
         }
-    
+
+        else if (indice === undefined) {
+            console.error("Erreur : " + arg + " n'est pas présente dans l'alphabet.");
+            process.exit(1);
+          }
+
         for (let j = indice; j < alphabet.length; j++){
             new_alphabet += alphabet[j];
         }
+       
     return new_alphabet.toLowerCase();
     }
 
