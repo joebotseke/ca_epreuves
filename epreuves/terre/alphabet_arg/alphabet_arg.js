@@ -16,7 +16,7 @@ function printAlphabetWithArg(arg){
         }
 
         else if (indice === undefined) {
-            console.error("Erreur : " + arg + " n'est pas présente dans l'alphabet.");
+            console.error("Erreur : La lettre " + arg + " n'est pas présente dans l'alphabet.");
             process.exit(1);
           }
 
