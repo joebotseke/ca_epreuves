@@ -15,11 +15,6 @@ function printAlphabetWithArg(arg){
             break;
         }
 
-        else if (indice === undefined) {
-            console.error("Erreur : La lettre " + arg + " n'est pas présente dans l'alphabet.");
-            process.exit(1);
-          }
-
         for (let j = indice; j < alphabet.length; j++){
             new_alphabet += alphabet[j];
         }
