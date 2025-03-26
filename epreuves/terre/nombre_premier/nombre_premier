@@ -1,0 +1,31 @@
+const { argv } = require('node:process');
+
+if (argv.length < 3) {
+  console.log("Il faut passer un argument.");
+  process.exit(1);
+}
+
+let n = parseInt(argv[2]);
+if (isNaN(n)) {
+  console.log("Erreur : l'argument n'est pas un nombre.");
+  process.exit(1);
+}
+
+if (n <= 1) {
+  console.log("n'est pas premier");
+  process.exit(0);
+}
+
+let estPremier = true;
+for (let i = 2; i < n; i++) {
+  if (n % i === 0) {
+    estPremier = false;
+    break;
+  }
+}
+
+if (estPremier) {
+  console.log("nombre premier");
+} else {
+  console.log("n'est pas premier");
+}
