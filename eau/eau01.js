@@ -7,12 +7,14 @@ function padNumber(n) {
     return n.toString().padStart(2, '0');
 }
 
+
 // === Solving ===
 function twoNumbersCombinations(){
     let combination = "";
     for (let i = 0; i<100; i++){
         for (j = i+1; j<100; j++){
-            combination += `${i} ${j} `;
+            combination += `${padNumber(i)} ${padNumber(j)}`;
+
             if (!(i === 98 && j === 99)){
                 combination +=", ";
             }        
