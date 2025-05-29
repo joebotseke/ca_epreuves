@@ -2,7 +2,7 @@
  * program that displays all the different possible combinations of three digits in ascending order. 
  */
 
-// Solving
+// === Solving ===
 function ThreeDigitCombination(){
     let combination = "";
     for (let i = 0; i <=9; i++){
@@ -18,7 +18,7 @@ function ThreeDigitCombination(){
     return combination;
 }
 
-// Display 
+// === Display ===
 function main() {
     const result = getThreeDigitCombinations();
     console.log(result);
