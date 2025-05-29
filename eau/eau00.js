@@ -19,4 +19,9 @@ function ThreeDigitCombination(){
 }
 
 // Display 
-console.log(ThreeDigitCombination());
+function main() {
+    const result = getThreeDigitCombinations();
+    console.log(result);
+}
+
+main();
