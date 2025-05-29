@@ -1,12 +1,11 @@
-/**
- * a program that displays all the different combinations of two numbers between 00 and 99 in ascending order.
- */
-
 // === Utilities ===
 function padNumber(n) {
     return n.toString().padStart(2, '0');
 }
 
+/**
+ * a program that displays all the different combinations of two numbers between 00 and 99 in ascending order.
+ */
 
 // === Solving ===
 function twoNumbersCombinations(){
