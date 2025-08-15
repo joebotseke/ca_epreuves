@@ -32,12 +32,12 @@ if (!isValidArguments(userArguments, 1)) {
 
 // ===  Solving - Tri ASCII ===
 function asciiSort(array) {
-    const n = getLength(array);
+    const arrayLength = getLength(array);
 
-    for (let i = 0; i < n - 1; i++) {
+    for (let i = 0; i < arrayLength - 1; i++) {
         let minIndex = i;
 
-        for (let j = i + 1; j < n; j++) {
+        for (let j = i + 1; j < arrayLength; j++) {
             if (array[j] < array[minIndex]) {
                 minIndex = j;
             }
